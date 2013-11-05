@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="140dp"
+  android:padding="8dp">
+
+  <com.parse.ParseImageView
+    android:id="@+id/picture"
+    android:layout_width="120dp"
+    android:layout_height="140dp"
+    android:layout_marginRight="8dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/placeholder" />
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/picture"
+    android:lines="2"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textStyle="bold"
+    android:text="8-week running plan" />
+
+  <com.parse.ParseImageView
+    android:id="@+id/repinned_picture"
+    android:layout_gravity="center"
+    android:layout_height="48dp"
+    android:layout_width="48dp"
+    android:layout_marginRight="8dp"
+    android:layout_alignBottom="@id/picture"
+    android:layout_toRightOf="@id/picture"
+    android:scaleType="centerCrop"
+    android:src="@drawable/placeholder" />
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/repinned_picture"
+    android:layout_alignTop="@id/repinned_picture"
+    android:layout_alignBottom="@id/repinned_picture">
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <TextView
+      android:id="@+id/repinned_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:singleLine="true"
+      android:gravity="center_vertical"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:text="Repinned by:" />
+
+    <TextView
+      android:id="@+id/repinned_by"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:singleLine="true"
+      android:gravity="center_vertical"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:textStyle="bold"
+      android:text="Nassar Stoertz" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/likes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title"
+    android:layout_toRightOf="@id/picture"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="3 likes" />
+
+  <TextView
+    android:id="@+id/repins"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title"
+    android:layout_toRightOf="@id/likes"
+    android:layout_marginLeft="20dp"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="8 repins" />
+
+
+</RelativeLayout>
