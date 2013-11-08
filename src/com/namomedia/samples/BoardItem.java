@@ -1,4 +1,4 @@
-package com.namomedia.android;
+package com.namomedia.samples;
 
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
