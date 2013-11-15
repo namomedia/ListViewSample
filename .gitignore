@@ -16,7 +16,6 @@ build
 
 # Maven
 target
-release.properties
 pom.xml.*
 settings.xml
 
