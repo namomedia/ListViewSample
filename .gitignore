@@ -1,15 +1,13 @@
 # Eclipse
-.project
-.classpath
 .settings
 .checkstyle
 out
 
 # IntelliJ IDEA
-.idea
-*.iml
 *.ipr
 *.iws
+workspace.xml
+tasks.xml
 classes
 gen-external-apklibs
 
