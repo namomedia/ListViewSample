@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
   @Override
   protected void onResume() {
     super.onResume();
-    // namoAdapter.requestAds();
+    namoAdapter.requestAds();
   }
 
   static class ItemAdapter extends ArrayAdapter<BoardItem> {

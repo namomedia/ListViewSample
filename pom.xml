@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.namomedia.android</groupId>
       <artifactId>Namo</artifactId>
-      <version>2.0.0</version>
+      <version>2.0.1</version>
       <type>apklib</type>
     </dependency>
   </dependencies>
@@ -56,4 +56,12 @@
       </plugin>
     </plugins>
   </build>
+
+  <!-- Uncomment to use staging repo -->
+  <!--<repositories>
+    <repository>
+      <id>namomedia</id>
+      <url>https://oss.sonatype.org/content/groups/staging</url>
+    </repository>
+  </repositories>-->
 </project>
