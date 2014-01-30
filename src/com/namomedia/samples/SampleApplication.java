@@ -16,6 +16,8 @@ public class SampleApplication extends Application {
         "JYq1sRB1ZBh6AmD0UvGNVsLq5DwyIr5PnZikF1QN");
 
     Namo.initialize(this, "app-test-id");
-    Namo.setTestDevices(true, "b626bebee5e49c65", "db772fc77f93ba28");
+    // Replace "11aa69fe03877062" with your device's ID. When you initialize the SDK
+    // your device's ID will be printed to the console in an I/Namo level logging message.
+    Namo.setTestDevices(true, "11aa69fe03877062");
   }
 }
