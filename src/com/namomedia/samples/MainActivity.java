@@ -22,7 +22,7 @@ import java.util.List;
 public class MainActivity extends Activity {
 
   private ItemAdapter itemAdapter;
-  private NamoListAdapter namoAdapter;
+  private NamoListAdapter<ItemAdapter> namoAdapter;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

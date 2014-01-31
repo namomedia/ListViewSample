@@ -14,7 +14,7 @@ apply plugin: 'android'
 dependencies {
   compile 'com.android.support:appcompat-v7:+'
   compile files('libs/Parse-1.3.5.jar')
-  compile('com.namomedia.android:namo:2.0.1@aar')
+  compile('com.namomedia.android:namo:2.1.0@aar')
 }
 
 android {
