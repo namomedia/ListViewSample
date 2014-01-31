@@ -35,13 +35,13 @@ android {
   }
 }
 
-// Uncomment to use staging repo
-/*repositories {
+repositories {
   mavenCentral()
-  maven {
+  // Uncomment to use staging repo
+  /*maven {
     url 'https://oss.sonatype.org/content/groups/staging'
-  }
-}*/
+  }*/
+}
 
 apply plugin: 'idea'
 
