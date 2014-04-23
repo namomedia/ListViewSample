@@ -10,8 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.namomedia.android.Namo;
-import com.namomedia.android.NamoListAdapter;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseImageView;
@@ -22,7 +20,6 @@ import java.util.List;
 public class MainActivity extends Activity {
 
   private ItemAdapter itemAdapter;
-  private NamoListAdapter<ItemAdapter> namoAdapter;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +29,8 @@ public class MainActivity extends Activity {
 
     // Set up list adapter.
     itemAdapter = new ItemAdapter(this);
-    namoAdapter = Namo.createListAdapter(this, itemAdapter);
-    namoAdapter.registerAdLayout(R.layout.namo_ad_item, "test-tracking-id");
     ListView listView = (ListView) findViewById(R.id.listview);
-    listView.setAdapter(namoAdapter);
+    listView.setAdapter(itemAdapter);
 
     // Query the Parse API for data.
     ParseQuery<BoardItem> query = ParseQuery.getQuery(BoardItem.class);
@@ -52,7 +47,6 @@ public class MainActivity extends Activity {
   @Override
   protected void onResume() {
     super.onResume();
-    namoAdapter.requestAds();
   }
 
   static class ItemAdapter extends ArrayAdapter<BoardItem> {
