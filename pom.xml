@@ -26,8 +26,8 @@
     </dependency>
     <dependency>
       <groupId>com.namomedia.android</groupId>
-      <artifactId>Namo</artifactId>
-      <version>2.1.0</version>
+      <artifactId>namo</artifactId>
+      <version>2.2.0</version>
       <type>apklib</type>
     </dependency>
   </dependencies>
