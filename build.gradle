@@ -33,7 +33,7 @@ dependencies {
     compile 'com.google.android.gms:play-services:5.0.77'
     compile files('libs/Parse-1.3.5.jar')
 
-    compile('com.namomedia.android:namo:2.2.17@aar')
+    compile('com.namomedia.android:namo:2.2.18@aar')
 }
 
 repositories {
