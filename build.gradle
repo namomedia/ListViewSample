@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
   dependencies {
-    classpath 'com.android.tools.build:gradle:0.6.3'
+    classpath 'com.android.tools.build:gradle:0.12.+'
   }
 
   repositories {
@@ -9,18 +9,16 @@ buildscript {
   }
 }
 
-apply plugin: 'android'
-
-dependencies {
-  compile 'com.android.support:appcompat-v7:+'
-  compile files('libs/Parse-1.3.5.jar')
-  compile('com.namomedia.android:namo:2.2.0@aar')
-}
+apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 16
-  buildToolsVersion '19'
+  compileSdkVersion 19
+  buildToolsVersion '19.1'
 
+  defaultConfig {
+    minSdkVersion 9
+    targetSdkVersion 19
+  }
   sourceSets {
     main {
       manifest.srcFile 'AndroidManifest.xml'
@@ -28,11 +26,14 @@ android {
       res.srcDirs = ['res']
     }
   }
+}
 
-  defaultConfig {
-    minSdkVersion 8
-    targetSdkVersion 16
-  }
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.1+'
+    compile 'com.google.android.gms:play-services:5.0.77'
+    compile files('libs/Parse-1.3.5.jar')
+
+    compile('com.namomedia.android:namo:2.2.17@aar')
 }
 
 repositories {

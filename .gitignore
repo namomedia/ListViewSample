@@ -4,6 +4,7 @@
 out
 
 # IntelliJ IDEA
+/.idea/*
 *.iws
 workspace.xml
 tasks.xml
